@@ -4,4 +4,4 @@
   X-XSS-Protection: 1; mode=block
   X-Content-Type-Options: nosniff
   Permissions-Policy: geolocation=(self "https://example.com"), microphone=()
-  Content-Security-Policy: script-src 'self' https://wordfinder-rkva.netlify.app/
+  Content-Security-Policy: default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval' 
