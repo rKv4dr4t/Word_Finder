@@ -1,0 +1,90 @@
+/* 'Replace' input text 
+Container is divided in 2 lines
+1: 'replace' and toggle
+2: 'replace' input text */
+
+#m-options__replace {
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.25);
+    border-radius: var(--radius);
+    margin-top: 1rem;
+    width: 20.5rem;
+    transition: 0.5s;
+}
+
+#m-replace__firstLine {
+    position: relative;
+    padding-top: 1rem;
+}
+
+#m-replace__firstLine > p {
+    position: absolute;
+    left: 4.78rem;
+    top: 0.3rem;
+}
+
+.m-heightReplace {
+    height: 3.65rem;
+}
+
+.m-heightReplace-transition {
+    height: 7.8rem;
+}
+
+#m-replace__secondLine {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#m-replace__secondLine {
+    padding-top: 1rem;
+}
+
+#a-inputReplace {
+    border: solid var(--side-color) var(--border);
+    border-radius: var(--radius);
+    width: 15.4rem;
+    height: 2.3rem;
+    padding: 0.1rem 1.3rem 0.1rem 1.3rem;
+    color: var(--side-color);
+}
+
+#a-inputReplace:focus {
+    border: solid var(--secondary-color) var(--border);
+    outline: none;
+}
+
+.a-inputReplaceHidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.a-inputReplace-transition {
+    visibility: visible;
+    opacity: 1;
+    transition-duration: 0.5s;
+    transition-delay: 0.5s;
+}
+
+#a-submit_replace:hover {
+    background: url("/img/arrow-right-solid-blue.svg") no-repeat center;
+}
+
+#a-submit_replace {
+    position: absolute;
+    top: 1.9rem;
+    left: 17rem;
+    border: 0;
+
+    background: url("/img/arrow-right-solid.svg") no-repeat center;
+    padding-right: 1rem;
+    cursor: pointer;
+}
+
+#m-replace__firstLine > .a-switch {
+    position: absolute;
+    right: 2rem;
+}

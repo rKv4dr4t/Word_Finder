@@ -1,0 +1,58 @@
+/* 'Find a word' input text 
+Container is divided in 4 lines
+1: 'match case' and toggle
+2: 'match entire word' and toggle
+3: 'find a word' input text
+4: helper text */
+
+#m-options__finder {
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0px 0.0625rem 0.4375rem rgba(0, 0, 0, 0.25);
+    border-radius: var(--radius);
+    margin-top: 1rem;
+    width: 20.5rem;
+    height: 12.5rem;
+}
+
+#m-finder__firstLine {
+    padding-top: 2rem;
+}
+
+#m-finder__secondLine {
+    padding-top: 1.5rem;
+}
+
+#m-finder__thirdLine {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#m-finder__thirdLine > label {
+    position: absolute;
+    color: var(--side-color);
+    background-color: white;
+    left: 3rem;
+    top: 1.5rem;
+    padding: 0 0.5rem 0 0.5rem;
+}
+
+#a-inputFind {
+    border: solid var(--side-color) var(--border);
+    border-radius: var(--radius);
+    width: 15.4rem;
+    height: 2.3rem;
+    padding: 0.1rem 1.3rem 0.1rem 1.3rem;
+    color: var(--side-color);
+}
+
+#a-inputFind:focus {
+    border: solid var(--secondary-color) var(--border);
+    outline: none;
+}
+
+#a-inputFind:focus + label {
+    color: var(--secondary-color);
+}

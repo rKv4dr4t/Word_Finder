@@ -1,0 +1,60 @@
+:root {
+    --main-color: #ffdf8c;
+    --secondary-color: #74a6b3;
+    --hover-color: #53777F;
+    --side-color: #5e5e5e;
+    --secondary-side-color: #c4c4c4;
+
+    --border: 0.25rem; // width of borders
+    --radius: 0.625rem; // radius of borders
+
+    --inner-width: 22.5rem; // width of options container
+
+    font-style: normal;
+    font-weight: normal;
+
+
+    // Variables for Desktop screen
+    --color-body: no-repeat center center fixed linear-gradient(224deg, #74a6b3, #53777f, #73bf87);
+    --height-o-container: 100%;
+    --paddingTop-o-globalContainer: 1rem;
+    --display-o-container: flex;
+    --width-o-container: 38.75rem;
+    --border-o-container: solid var(--side-color) var(--border);
+    --borderRadius-o-container: 0.625rem;
+    --margin-o-options: -0.2rem;
+    --display-a-h1Top: none;
+    --display-a-h1Bottom: block;
+    --width-m-totalResults: 16rem;
+    --maxHeight-a-secondLine__results: 2rem;
+    --marginBottom-a-secondLine__results: 0;
+
+    --backgroundPosition-a-submit_copy-default: 3.5rem;
+    --paddingLeft-a-submit_copy-default: 2rem;
+    --backgroundPosition-a-submit_copy: 3.2rem;
+    --paddingLeft-a-submit_copy: 2.8rem;
+}
+
+/* Mobile screen */
+@media screen and (max-width: 636px) {
+    :root {
+        --color-body: var(--main-color);
+        --height-o-container: 100vh;
+        --paddingTop-o-globalContainer: 0;
+        --display-o-container: block;
+        --width-o-container: 100%;
+        --border-o-container: 0;
+        --borderRadius-o-container: 0;
+        --margin-o-options: 0 auto;
+        --display-a-h1Top: block;
+        --display-a-h1Bottom: none;
+        --width-m-totalResults: 20.5rem;  
+        --maxHeight-a-secondLine__results: none;
+        --marginBottom-a-secondLine__results: 5rem;
+
+        --backgroundPosition-a-submit_copy-default: 6rem;
+        --paddingLeft-a-submit_copy-default: 2.8rem;
+        --backgroundPosition-a-submit_copy: 5.9rem;
+        --paddingLeft-a-submit_copy: 3.6rem;
+    }
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <link rel='stylesheet' href='dist/main.css'>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Word finder</title>
+  <meta name="description" content="A simple word finder app">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+
+  <div id="o-globalContainer">
+
+    <div id="o-container">
+
+      <h1 id="a-h1Top">WORD FINDER</h1>
+
+      <div id="o-options">
+
+        <div id="m-options__putText">
+          <div id="m-firstLine__text">
+
+            <div id="a-parentTextArea">
+              <textarea id="a-firstLine__textarea" name="a-firstLine__textarea"></textarea>
+            </div>
+            <label for="a-firstLine__textarea" id="a-putSomeTextHere">Put some text here</label>
+
+          </div>
+
+          <div id="m-secondLine__text">
+            <p>or</p>
+          </div>
+
+          <div id="m-thirdLine__text">
+            <input id="submit_generate" type="submit" value="GENERATE IT" onclick="window.generateLoremIpsum()">
+          </div>
+
+        </div>
+
+        <div id="m-options__finder">
+
+          <div id="m-finder__firstLine">
+            <img class="icon" src="/img/match-case.svg" alt="Match case" />
+            <p>Match case</p>
+            <div class="a-switch">
+              <input type="checkbox" id="a-switch1" class="a-switch__input" onclick="window.caseSensitive()">
+              <label for="a-switch1" class="a-switch__label"></label>
+            </div>
+          </div>
+
+          <div id="m-finder__secondLine">
+            <img class="icon" src="/img/match-word.svg" alt="Match word" />
+            <p>Match entire word</p>
+            <div class="a-switch">
+              <input type="checkbox" id="a-switch2" class="a-switch__input" onclick="window.wholeWord()">
+              <label for="a-switch2" class="a-switch__label"></label>
+            </div>
+          </div>
+
+          <div id="m-finder__thirdLine">
+            <input id="a-inputFind" type="text" name="a-inputFind" autocomplete="off">
+            <label for="a-inputFind">Find a word</label>
+          </div>
+
+        </div>
+
+        <div id="m-options__replace" class="m-heightReplace">
+
+          <div id="m-replace__firstLine">
+            <img class="icon" src="/img/replace.svg" alt="Replace" />
+            <p>Replace</p>
+            <div class="a-switch">
+              <input type="checkbox" id="a-switch3" class="a-switch__input" onclick="window.replaceHeight()">
+              <label for="a-switch3" class="a-switch__label"></label>
+            </div>
+          </div>
+
+          <div id="m-replace__secondLine" class="a-inputReplaceHidden">
+            <input id="a-inputReplace" type="text" name="a-inputReplace" autocomplete="off">
+            <input id="a-submit_replace" type="submit" value="  " onclick="window.replaceWord()">
+          </div>
+
+        </div>
+
+      </div>
+
+      <div id="m-totalResults">
+
+        <h1 id="a-h1Bottom">WORD FINDER</h1>
+
+        <div id="m-results">
+
+          <div id="a-firstLine__results">
+            <span id="resultTotalString">no word search yet</span>
+            <p id="a-numberUnderline"></p>
+          </div>
+          <hr id="hrLine">
+          <div id="a-zeroLine__results">
+            <input id="a-submit_copy" type="submit" value="COPY" onclick="window.clipboardCopy()">
+          </div>
+          <div id="a-secondLine__results">
+            <p id="resultUnderlines">
+
+              Find a word or some words in a given text or in a self-generated one. <br><br>You can match <b>case
+                sensitive</b> text or just an entire and <b>single word</b>. <br><br> You can also <b>replace</b> the
+              matched words with something else.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src='dist/main.js'></script>
+
+</body>
+
+</html>

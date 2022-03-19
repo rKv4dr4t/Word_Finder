@@ -1,0 +1,96 @@
+// Animation background color
+
+body {
+    background: var(--color-body);
+    background-size: 600% 600%;
+
+    -webkit-animation: backgroundAnimation 17s ease infinite;
+    -moz-animation: backgroundAnimation 17s ease infinite;
+    animation: backgroundAnimation 17s ease infinite;
+}
+
+@-webkit-keyframes backgroundAnimation {
+    0%{background-position:96% 0%}
+    50%{background-position:5% 100%}
+    100%{background-position:96% 0%}
+}
+@-moz-keyframes backgroundAnimation {
+    0%{background-position:96% 0%}
+    50%{background-position:5% 100%}
+    100%{background-position:96% 0%}
+}
+@keyframes backgroundAnimation {
+    0%{background-position:96% 0%}
+    50%{background-position:5% 100%}
+    100%{background-position:96% 0%}
+}
+
+
+
+h1 {
+    color: var(--side-color);
+    font-size: 1rem;
+    text-align: center;
+    margin: 0.875rem;
+}
+
+p {
+    color: var(--side-color);
+    display: inline;
+    font-size: 1rem;
+}
+
+#hrLine {
+    margin: 1rem 0 1rem 0;
+    padding: 0;
+    border: 0;
+    border-top: 0.1875rem solid var(--secondary-side-color);
+}
+
+.icon {
+    margin: 0 1rem 0 1.5rem;
+}
+
+#a-submit_copy {
+    width: 100%;
+    height: 2.5rem;
+    padding-left: var(--paddingLeft-a-submit_copy-default); 
+    background: url("/img/copy.svg") no-repeat;
+    background-color: var(--secondary-color);
+    background-position: var(--backgroundPosition-a-submit_copy-default); 
+    border-radius: var(--radius);
+    outline: none;
+    border: 0;
+    color: white;
+    margin-bottom: 0.8rem;
+    cursor: pointer;
+}
+
+#a-submit_copy:hover {
+    background-color: var(--hover-color);
+}
+
+#a-submit_copy:active {
+    background-color: var(--side-color);
+}
+
+.regUnderline {
+    display: inline;
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+#againPlaceHolder {
+    color: var(--secondary-side-color);
+}
+
+#resultTotalString {
+    color: var(--side-color);
+}
+
+#a-numberUnderline {
+    color: white;
+    padding: 0.1rem;
+    background-color: var(--side-color);
+    border-radius: 0.1rem;
+}
