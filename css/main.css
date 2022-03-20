@@ -682,7 +682,8 @@ Container is divided in 2 lines
   color: var(--side-color);
   resize: none;
   background-color: red;
-  text-indent: -3px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 #a-firstLine__textarea:focus {
