@@ -47,11 +47,13 @@
     position: absolute;
     left: 0.7rem;
     width: 17rem;
+    max-width: 17rem;
     height: 8rem;
     border: none;
     color: var(--side-color);
     resize: none;
 }
+
 
 #a-firstLine__textarea:focus {
     outline: none;
