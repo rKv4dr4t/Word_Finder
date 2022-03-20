@@ -732,6 +732,7 @@ body {
   background-size: 600% 600%;
   -webkit-animation: backgroundAnimation 17s ease infinite;
   animation: backgroundAnimation 17s ease infinite;
+  -webkit-text-size-adjust: 100%;
 }
 
 @-webkit-keyframes backgroundAnimation {
