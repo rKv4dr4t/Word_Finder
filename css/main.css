@@ -681,7 +681,6 @@ Container is divided in 2 lines
   border: none;
   color: var(--side-color);
   resize: none;
-  background-color: red;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
