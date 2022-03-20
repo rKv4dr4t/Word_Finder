@@ -677,6 +677,7 @@ Container is divided in 2 lines
   left: 0.7rem;
   width: 17rem;
   max-width: 17rem;
+  background-color: red;
   height: 8rem;
   border: none;
   color: var(--side-color);
